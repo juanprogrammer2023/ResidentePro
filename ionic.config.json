@@ -1,0 +1,7 @@
+{
+  "name": "FinControl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
