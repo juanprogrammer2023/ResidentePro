@@ -63,7 +63,6 @@ import {
   warningOutline,
   warningSharp,
 } from 'ionicons/icons';
-import Login from '@/components/Login.vue';
 
 const selectedIndex = ref(0);
 const appPages = [

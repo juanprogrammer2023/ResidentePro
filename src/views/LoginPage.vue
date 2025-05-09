@@ -1,37 +1,50 @@
 <template>
-    <div class="login-container">
-        <div class="login-header">
+    <ion-page>
+      <ion-content>
+        <div class="login-container">
+          <div class="login-header">
             <h1>Sistema de Gestión Financiera</h1>
             <p>Ingrese sus credenciales para acceder</p>
-        </div>
-        
-        <form id="login-form">
+          </div>
+  
+          <form id="login-form">
             <div class="input-group">
-                <label for="username">Usuario</label>
-                <i class="fas fa-user"></i>
-                <input type="text" id="username" placeholder="Ingrese su usuario" required>
-                <div class="error-message" id="username-error"></div>
+              <label for="username">Usuario</label>
+              <i class="fas fa-user"></i>
+              <input type="text" id="username" placeholder="Ingrese su usuario" required>
+              <div class="error-message" id="username-error"></div>
             </div>
-            
+  
             <div class="input-group">
-                <label for="password">Contraseña</label>
-                <i class="fas fa-lock"></i>
-                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
-                <div class="error-message" id="password-error"></div>
+              <label for="password">Contraseña</label>
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+              <div class="error-message" id="password-error"></div>
             </div>
-            
+  
             <div class="remember-forgot">
-                <div class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Recordarme</label>
-                </div>
-                <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+              <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Recordarme</label>
+              </div>
+              <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
             </div>
-            
+  
             <button type="submit" class="btn-login">Iniciar sesión</button>
-        </form>
-    </div>
-</template>
+          </form>
+        </div>
+      </ion-content>
+    </ion-page>
+  </template>
+  
+  <script setup lang="ts">
+  import { IonContent, IonPage } from '@ionic/vue';
+  </script>
+  
+  <style scoped>
+  /* ... mismos estilos que ya tenías ... */
+  </style>
+  
 
 <style scoped>
 
