@@ -1,6 +1,7 @@
 <template>
   <ion-app>
-    <ion-split-pane content-id="main-content">
+    <login v-if="!isAuthenticated" />
+    <ion-split-pane v-else-if="isAuthenticated" content-id="main-content">
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="inbox-list">
@@ -63,6 +64,9 @@ import {
   warningOutline,
   warningSharp,
 } from 'ionicons/icons';
+
+import Login from '../src/views/LoginPage.vue'; // Importa el componente de inicio de sesión
+const isAuthenticated = ref(false); // Por defecto, no autenticado
 
 const selectedIndex = ref(0);
 const appPages = [
